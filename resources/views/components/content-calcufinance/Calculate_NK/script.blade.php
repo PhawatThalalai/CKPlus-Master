@@ -685,68 +685,6 @@
 </script>
 {{-- //ซ่อน input ดอกเบี้ย// --}}
 <script>
-    // $(document).ready(function() {
-    //     // Interest Rate Script
-    //     $('#interestFields').hide(); // เริ่มต้นซ่อนฟิลด์
-
-    //     $('#editInterestRate').change(function() {
-    //         console.log('Checkbox changed');
-    //         if ($(this).is(':checked')) {
-    //             console.log('Checkbox is checked');
-    //             $('#interestFields').show(); // แสดงฟิลด์แก้ไขดอกเบี้ย
-    //             $('#InterestCar_Fields').hide(); // ซ่อนฟิลด์ดอกเบี้ย
-    //         } else {
-    //             // เรียกข้อมูลจาก DB ในกรณีที่ปิด checkbox
-    //             $('#text-alert').show();
-    //             $('#content-table').addClass("d-none");
-    //             // if (!event.key === "Enter") {
-    //             $('#content-table').removeClass("d-none");
-    //             showRateTB()
-    //             $('#text-alert').hide();
-    //             // }
-    //             console.log('Checkbox is unchecked');
-    //             $('#interestFields').hide(); // ซ่อนฟิลด์แก้ไขดอกเบี้ย
-    //             $('#InterestCar_Fields').show(); // แสดงฟิลด์ดอกเบี้ย
-    //         }
-    //     });
-
-    //     // คำนวณอัตราดอกเบี้ยต่อปี
-    //     $('#EditInterestVal').on('input', function() {
-    //         var editInterestVal = parseFloat($(this).val());
-    //         if (!isNaN(editInterestVal)) {
-    //             var annualInterest = editInterestVal * 12;
-    //             $('#InterestYearValue').val(annualInterest.toFixed(2)); // แสดงผลใน input
-    //         } else {
-    //             $('#InterestYearValue').val(''); // ล้างค่าถ้าไม่ใช่ตัวเลข
-    //         }
-    //     });
-
-    //     // เริ่มต้นซ่อนฟิลด์แก้ไขค่าดำเนินการ
-    //     $('#EditProcess').hide();
-
-    //     $('#editProcess_Car').change(function() {
-    //         console.log('Checkbox changed');
-    //         if ($(this).is(':checked')) {
-    //             console.log('Checkbox is checked');
-    //             $('#EditProcess').show(); // แสดงฟิลด์แก้ไขค่าดำเนินการ
-    //             $('#ProCess_CarVal').hide(); // ซ่อนฟิลด์ค่าดำเนินการ
-    //         } else {
-    //             // เรียกข้อมูลจาก DB ในกรณีที่ปิด checkbox
-    //             $('#text-alert').show();
-    //             $('#content-table').addClass("d-none");
-    //             // if (!event.key === "Enter") {
-    //             $('#content-table').removeClass("d-none");
-    //             showRateTB()
-    //             $('#text-alert').hide();
-    //             // }
-    //             console.log('Checkbox is unchecked');
-    //             $('#EditProcess').hide(); // ซ่อนฟิลด์แก้ไขค่าดำเนินการ
-    //             $('#ProCess_CarVal').show(); // แสดงฟิลด์ค่าดำเนินการ
-    //         }
-    //     });
-    //     // ตอนเช็ค checkBox
-
-    // });
     $(document).ready(function() {
         $('#interestFields').hide(); // เริ่มต้นซ่อนฟิลด์
         $('#EditProcess').hide(); // เริ่มต้นซ่อนฟิลด์แก้ไขค่าดำเนินการ
@@ -815,4 +753,69 @@
 
         });
     });
+</script>
+
+<script>
+    // $(document).ready(function() {
+    //     // Interest Rate Script
+    //     $('#interestFields').hide(); // เริ่มต้นซ่อนฟิลด์
+
+    //     $('#editInterestRate').change(function() {
+    //         console.log('Checkbox changed');
+    //         if ($(this).is(':checked')) {
+    //             console.log('Checkbox is checked');
+    //             $('#interestFields').show(); // แสดงฟิลด์แก้ไขดอกเบี้ย
+    //             $('#InterestCar_Fields').hide(); // ซ่อนฟิลด์ดอกเบี้ย
+    //         } else {
+    //             // เรียกข้อมูลจาก DB ในกรณีที่ปิด checkbox
+    //             $('#text-alert').show();
+    //             $('#content-table').addClass("d-none");
+    //             // if (!event.key === "Enter") {
+    //             $('#content-table').removeClass("d-none");
+    //             showRateTB()
+    //             $('#text-alert').hide();
+    //             // }
+    //             console.log('Checkbox is unchecked');
+    //             $('#interestFields').hide(); // ซ่อนฟิลด์แก้ไขดอกเบี้ย
+    //             $('#InterestCar_Fields').show(); // แสดงฟิลด์ดอกเบี้ย
+    //         }
+    //     });
+
+    //     // คำนวณอัตราดอกเบี้ยต่อปี
+    //     $('#EditInterestVal').on('input', function() {
+    //         var editInterestVal = parseFloat($(this).val());
+    //         if (!isNaN(editInterestVal)) {
+    //             var annualInterest = editInterestVal * 12;
+    //             $('#InterestYearValue').val(annualInterest.toFixed(2)); // แสดงผลใน input
+    //         } else {
+    //             $('#InterestYearValue').val(''); // ล้างค่าถ้าไม่ใช่ตัวเลข
+    //         }
+    //     });
+
+    //     // เริ่มต้นซ่อนฟิลด์แก้ไขค่าดำเนินการ
+    //     $('#EditProcess').hide();
+
+    //     $('#editProcess_Car').change(function() {
+    //         console.log('Checkbox changed');
+    //         if ($(this).is(':checked')) {
+    //             console.log('Checkbox is checked');
+    //             $('#EditProcess').show(); // แสดงฟิลด์แก้ไขค่าดำเนินการ
+    //             $('#ProCess_CarVal').hide(); // ซ่อนฟิลด์ค่าดำเนินการ
+    //         } else {
+    //             // เรียกข้อมูลจาก DB ในกรณีที่ปิด checkbox
+    //             $('#text-alert').show();
+    //             $('#content-table').addClass("d-none");
+    //             // if (!event.key === "Enter") {
+    //             $('#content-table').removeClass("d-none");
+    //             showRateTB()
+    //             $('#text-alert').hide();
+    //             // }
+    //             console.log('Checkbox is unchecked');
+    //             $('#EditProcess').hide(); // ซ่อนฟิลด์แก้ไขค่าดำเนินการ
+    //             $('#ProCess_CarVal').show(); // แสดงฟิลด์ค่าดำเนินการ
+    //         }
+    //     });
+    //     // ตอนเช็ค checkBox
+
+    // });
 </script>
