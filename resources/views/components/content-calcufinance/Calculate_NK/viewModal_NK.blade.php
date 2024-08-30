@@ -468,7 +468,7 @@
                                                     </div>
                                                     <div class="form-floating col-sm-6 mb-1">
                                                         <input type="text" name="InterestYearValue"
-                                                            id="InterestYearValue" class="form-control">
+                                                            id="InterestYearValue" class="form-control" readonly>
                                                         <label> แก้ไขดอกเบี้ยต่อปี </label>
                                                     </div>
                                                 </div>
