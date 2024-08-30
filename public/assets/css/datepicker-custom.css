@@ -1,0 +1,194 @@
+/*!
+ * Datepicker - Custom
+ * 
+ * ปรับแต่ง เน้นหัวข้อ/ใส่สี/รองรับ dark mode
+ *
+ */
+
+.datepicker table tr td.today {
+    color: #000000 !important;
+}
+.datepicker table tr td.today:hover {
+    color: var(--bs-orange) !important;
+}
+[data-layout-mode=dark] .datepicker table tr td.range {
+    background: #eeeeee30;
+}
+
+.datepicker .datepicker-days .table-condensed thead tr th,
+.datepicker .datepicker-months .table-condensed thead tr th,
+.datepicker .datepicker-years .table-condensed thead tr th,
+.datepicker .datepicker-decades .table-condensed thead tr th,
+.datepicker .datepicker-centuries .table-condensed thead tr th {
+    font-weight: 600;
+}
+
+.datepicker .datepicker-days .table-condensed tbody tr td:nth-child(1) {
+    background-color: rgba(var(--bs-danger-rgb), 0.3);
+}
+
+.datepicker .datepicker-days .table-condensed tbody tr td:nth-child(7) {
+    background-color: rgba(111, 66, 193, 0.3);
+}
+
+.datepicker .datepicker-days .table-condensed tbody tr td:nth-child(1):not(.disabled):hover {
+    background-color: rgba(var(--bs-danger-rgb), 0.5);
+}
+
+.datepicker .datepicker-days .table-condensed tbody tr td:nth-child(7):not(.disabled):hover {
+    background-color: rgba(60, 20, 135, 0.3);
+}
+
+.datepicker .datepicker-days .table-condensed tfoot tr th.clear,
+.datepicker .datepicker-months .table-condensed tfoot tr th.clear,
+.datepicker .datepicker-years .table-condensed tfoot tr th.clear,
+.datepicker .datepicker-decades .table-condensed tfoot tr th.clear,
+.datepicker .datepicker-centuries .table-condensed tfoot tr th.clear {
+    background-color: #af4c56;
+    border: none;
+    color: white;
+    padding: 0.3rem .9rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.datepicker .datepicker-days .table-condensed tfoot tr th.clear:hover,
+.datepicker .datepicker-months .table-condensed tfoot tr th.clear:hover,
+.datepicker .datepicker-years .table-condensed tfoot tr th.clear:hover,
+.datepicker .datepicker-decades .table-condensed tfoot tr th.clear:hover,
+.datepicker .datepicker-centuries .table-condensed tfoot tr th.clear:hover {
+    background-color: #ff655a;
+}
+
+.datepicker .datepicker-days .table-condensed tfoot tr th.clear::before,
+.datepicker .datepicker-months .table-condensed tfoot tr th.clear::before,
+.datepicker .datepicker-years .table-condensed tfoot tr th.clear::before,
+.datepicker .datepicker-decades .table-condensed tfoot tr th.clear::before,
+.datepicker .datepicker-centuries .table-condensed tfoot tr th.clear::before {
+    font-family: "Font Awesome 5 Free"; content: "\f2ed";
+    margin-right: 8px;
+}
+
+/*------------------------------------------------*/
+
+.datepicker {
+    border: 1px solid var(--bs-border-color);
+    padding: 8px;
+}
+.datepicker table tr th {
+    font-weight: 500;
+}
+.datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td .active.disabled, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.selected, .datepicker table tr td.selected:hover, .datepicker table tr td.selected.disabled, .datepicker table tr td.selected.disabled:hover,
+.datepicker table tr td span.active.active, .datepicker table tr td span.active:hover.active {
+    background-color: #556ee6 !important;
+    background-image: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: #fff !important;
+}
+.datepicker table tr td.day.focused, .datepicker table tr td.day:hover,
+.datepicker table tr td span.focused,
+.datepicker table tr td span:hover {
+    background: var(--bs-light);
+}
+.datepicker table tr td.new, .datepicker table tr td.old,
+.datepicker table tr td span.new,
+.datepicker table tr td span.old {
+    color: var(--bs-gray-500);
+    opacity: 0.6;
+}
+.datepicker table tr td.range, .datepicker table tr td.range.disabled, .datepicker table tr td.range.disabled:hover, .datepicker table tr td.range:hover {
+    background-color: var(--bs-gray-300);
+}
+  
+.table-condensed > thead > tr > th, .table-condensed > tbody > tr > td {
+    padding: 7px;
+}
+  
+.bootstrap-datepicker-inline .datepicker-inline {
+    width: auto !important;
+    display: inline-block;
+}
+  
+.datepicker-container {
+    border: 1px solid #eff2f7;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #fff;
+}
+.datepicker-container.datepicker-inline {
+    width: 212px;
+}
+  
+.datepicker {
+    color: var(--bs-text-muted);
+}
+.datepicker .datepicker-switch:hover, .datepicker .next:hover, .datepicker .prev:hover, .datepicker tfoot tr th:hover {
+    background: var(--bs-light);
+}
+  
+.datepicker-panel > ul > li {
+    background-color: #fff;
+    border-radius: 4px;
+}
+.datepicker-panel > ul > li.picked, .datepicker-panel > ul > li.picked:hover {
+    background-color: rgba(85, 110, 230, 0.25);
+    color: #556ee6;
+}
+.datepicker-panel > ul > li.highlighted, .datepicker-panel > ul > li.highlighted:hover, .datepicker-panel > ul > li:hover {
+    background-color: #556ee6;
+    color: #fff;
+}
+.datepicker-panel > ul > li.muted, .datepicker-panel > ul > li.muted:hover {
+    color: var(--bs-gray-500);
+    opacity: 0.6;
+}
+.datepicker-panel > ul[data-view=week] > li {
+    font-weight: 500;
+}
+.datepicker-panel > ul[data-view=week] > li, .datepicker-panel > ul[data-view=week] > li:hover {
+    background-color: #fff;
+}
+
+.table-condensed > thead > tr > th, .table-condensed > tbody > tr > td {
+    padding: 5px;
+}
+
+/*------------------------------------------------*/
+/* ปุ่ม วันนี้ */
+
+.datepicker .datepicker-days .table-condensed tfoot tr th.today,
+.datepicker .datepicker-months .table-condensed tfoot tr th.today,
+.datepicker .datepicker-years .table-condensed tfoot tr th.today,
+.datepicker .datepicker-decades .table-condensed tfoot tr th.today,
+.datepicker .datepicker-centuries .table-condensed tfoot tr th.today {
+    background-color: #3aa57f;
+    border: none;
+    color: white;
+    padding: 0.3rem .9rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.datepicker .datepicker-days .table-condensed tfoot tr th.today:hover,
+.datepicker .datepicker-months .table-condensed tfoot tr th.today:hover,
+.datepicker .datepicker-years .table-condensed tfoot tr th.today:hover,
+.datepicker .datepicker-decades .table-condensed tfoot tr th.today:hover,
+.datepicker .datepicker-centuries .table-condensed tfoot tr th.today:hover {
+    background-color: #34c38f;
+}
+
+.datepicker .datepicker-days .table-condensed tfoot tr th.today::before,
+.datepicker .datepicker-months .table-condensed tfoot tr th.today::before,
+.datepicker .datepicker-years .table-condensed tfoot tr th.today::before,
+.datepicker .datepicker-decades .table-condensed tfoot tr th.today::before,
+.datepicker .datepicker-centuries .table-condensed tfoot tr th.today::before {
+    font-family: "Font Awesome 5 Free"; content: "\f017";
+    margin-right: 8px;
+}
+
+/*------------------------------------------------*/

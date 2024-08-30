@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="10/30/2023 13:22:56" ReportInfo.Modified="10/31/2023 10:30:18" ReportInfo.CreatorVersion="2023.1.0.0">
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqHwzMSgwTFaHpjtG3vsOj8UxwmgPT666Tcw/dpC6tE5LhNqD7uAQAtLpLqqbj0SmUl9gqaMRl4iPxR/ntU2O9OOzQPeBoYz98IzAl2tnj+ya/wqCHJVNyOyntdCudGMCMUlYPRGQdNq6FcntlLOtKPx3BRCzZZLzPkgAuSOvy1/an3sX+MoZvFzYl46Yfu0/Y/YU+aeYMbt/PV9wz0XVR5WShMxMk2WFBOHm2CDGaN/k=">
+      <TableDataSource Name="TB_Company" DataType="System.Int32" Enabled="true" TableName="TB_Company">
+        <Column Name="id" DataType="System.Int64"/>
+        <Column Name="Company_Id" DataType="System.String"/>
+        <Column Name="Company_Branch" DataType="System.Int32"/>
+        <Column Name="Company_Name" DataType="System.String"/>
+        <Column Name="Company_Addr" DataType="System.String"/>
+        <Column Name="Company_Tel" DataType="System.String"/>
+        <Column Name="Company_fax" DataType="System.String"/>
+        <Column Name="Company_Zone" DataType="System.Int32"/>
+        <Column Name="Company_Type" DataType="System.Int32"/>
+        <Column Name="Agent_Code" DataType="System.String"/>
+        <Column Name="Agent_Name" DataType="System.String"/>
+        <Column Name="Credo_Score" DataType="System.Int32"/>
+        <Column Name="Credo_percen" DataType="System.Int32"/>
+        <Column Name="View_payment" DataType="System.String"/>
+        <Column Name="created_at" DataType="System.DateTime"/>
+        <Column Name="updated_at" DataType="System.DateTime"/>
+      </TableDataSource>
+      <TableDataSource Name="TMP_CANCONTRACT" DataType="System.Int32" Enabled="true" TableName="TMP_CANCONTRACT">
+        <Column Name="id" DataType="System.Int64"/>
+        <Column Name="PatchCon_id" DataType="System.Int32"/>
+        <Column Name="dataPact_id" DataType="System.Int32"/>
+        <Column Name="CODLOAN" DataType="System.Int32"/>
+        <Column Name="LOCAT" DataType="System.String"/>
+        <Column Name="CANNO" DataType="System.String"/>
+        <Column Name="CONTNO" DataType="System.String"/>
+        <Column Name="SDATE" DataType="System.DateTime"/>
+        <Column Name="TOTPRC" DataType="System.Decimal"/>
+        <Column Name="SMPAY" DataType="System.Decimal"/>
+        <Column Name="TOTBAL" DataType="System.Decimal"/>
+        <Column Name="EXP_AMT" DataType="System.Decimal"/>
+        <Column Name="CANDATE" DataType="System.DateTime"/>
+        <Column Name="CANSTAT" DataType="System.String"/>
+        <Column Name="BILLCOLL" DataType="System.Int32"/>
+        <Column Name="CHECKER" DataType="System.Int32"/>
+        <Column Name="USERCN" DataType="System.Int32"/>
+        <Column Name="CONTSTAT" DataType="System.String"/>
+        <Column Name="PAYFOR" DataType="System.Decimal"/>
+        <Column Name="PAYAMT" DataType="System.Decimal"/>
+        <Column Name="MEMO1" DataType="System.String"/>
+        <Column Name="REXP_PRD" DataType="System.Decimal"/>
+        <Column Name="EXP_FRM" DataType="System.Decimal"/>
+        <Column Name="EXP_TO" DataType="System.Decimal"/>
+        <Column Name="KANGINT" DataType="System.Decimal"/>
+        <Column Name="TOTUPAY" DataType="System.Decimal"/>
+        <Column Name="PAYDATE" DataType="System.DateTime"/>
+        <Column Name="PAYMENT" DataType="System.Decimal"/>
+        <Column Name="KEXP_AMT" DataType="System.Decimal"/>
+        <Column Name="KEXP_PRD" DataType="System.Decimal"/>
+        <Column Name="LASTCANDT" DataType="System.DateTime"/>
+        <Column Name="created_at" DataType="System.DateTime"/>
+        <Column Name="updated_at" DataType="System.DateTime"/>
+        <Column Name="deleted_at" DataType="System.DateTime"/>
+      </TableDataSource>
+      <TableDataSource Name="PatchHP_Contracts" DataType="System.Int32" Enabled="true" TableName="PatchHP_Contracts">
+        <Column Name="id" DataType="System.Int64"/>
+        <Column Name="DataCus_id" DataType="System.Int64"/>
+        <Column Name="DataTag_id" DataType="System.Int64"/>
+        <Column Name="DataPact_id" DataType="System.Int64"/>
+        <Column Name="CONTNO" DataType="System.String"/>
+        <Column Name="CODLOAN" DataType="System.String"/>
+        <Column Name="CONTTYP" DataType="System.String"/>
+        <Column Name="TYPECON" DataType="System.String"/>
+        <Column Name="CONTSTAT" DataType="System.String"/>
+        <Column Name="YSTAT" DataType="System.String"/>
+        <Column Name="YDATE" DataType="System.DateTime"/>
+        <Column Name="SDATE" DataType="System.DateTime"/>
+        <Column Name="FDATE" DataType="System.DateTime"/>
+        <Column Name="LDATE" DataType="System.DateTime"/>
+        <Column Name="CREATE_LDUE" DataType="System.DateTime"/>
+        <Column Name="LPAYD" DataType="System.DateTime"/>
+        <Column Name="LPAYA" DataType="System.Decimal"/>
+        <Column Name="DLDAY" DataType="System.Int32"/>
+        <Column Name="CLOSAR" DataType="System.DateTime"/>
+        <Column Name="CLOSTAT" DataType="System.String"/>
+        <Column Name="NCSHPRC" DataType="System.Decimal"/>
+        <Column Name="VCSHPRC" DataType="System.Decimal"/>
+        <Column Name="TCSHPRC" DataType="System.Decimal"/>
+        <Column Name="INTFLATRATE" DataType="System.Decimal"/>
+        <Column Name="Interest_IRR" DataType="System.Decimal"/>
+        <Column Name="TOT_UPAY" DataType="System.Decimal"/>
+        <Column Name="TOTPRC" DataType="System.Decimal"/>
+        <Column Name="APPLICANT" DataType="System.String"/>
+        <Column Name="BALANC" DataType="System.Decimal"/>
+        <Column Name="NETPROFIT" DataType="System.Decimal"/>
+        <Column Name="INTKPAY" DataType="System.Decimal"/>
+        <Column Name="CAPITALBL" DataType="System.Decimal"/>
+        <Column Name="GRDCOD" DataType="System.String"/>
+        <Column Name="OLDGRDCOD" DataType="System.String"/>
+        <Column Name="LIMITIRR" DataType="System.Decimal"/>
+        <Column Name="PERIOD" DataType="System.Int32"/>
+        <Column Name="T_NOPAY" DataType="System.Decimal"/>
+        <Column Name="INTLATE" DataType="System.Decimal"/>
+        <Column Name="LOCAT" DataType="System.String"/>
+        <Column Name="FDATEINT" DataType="System.DateTime"/>
+        <Column Name="SMPAY" DataType="System.Decimal"/>
+        <Column Name="VATRT" DataType="System.Decimal"/>
+        <Column Name="NPRICE" DataType="System.Decimal"/>
+        <Column Name="VATPRICE" DataType="System.Decimal"/>
+        <Column Name="NOPAY" DataType="System.Int32"/>
+        <Column Name="EXP_PRD" DataType="System.Decimal"/>
+        <Column Name="EXP_AMT" DataType="System.Decimal"/>
+        <Column Name="EXP_FRM" DataType="System.Decimal"/>
+        <Column Name="EXP_TO" DataType="System.Decimal"/>
+        <Column Name="EXP_DAY" DataType="System.Int32"/>
+        <Column Name="EXP_REAL" DataType="System.Decimal"/>
+        <Column Name="NDAWN" DataType="System.Decimal"/>
+        <Column Name="VATDAWN" DataType="System.Decimal"/>
+        <Column Name="TOTDAWN" DataType="System.Decimal"/>
+        <Column Name="TAXNO" DataType="System.String"/>
+        <Column Name="TAXDT" DataType="System.String"/>
+        <Column Name="BILLCOLL" DataType="System.String"/>
+        <Column Name="SALECOD" DataType="System.String"/>
+        <Column Name="HLDNO" DataType="System.Decimal"/>
+        <Column Name="MTHDDIS" DataType="System.String"/>
+        <Column Name="USEADD" DataType="System.String"/>
+        <Column Name="RECONTNO" DataType="System.String"/>
+        <Column Name="CARRDT" DataType="System.DateTime"/>
+        <Column Name="SO" DataType="System.String"/>
+        <Column Name="MEMO" DataType="System.String"/>
+        <Column Name="UserInsert" DataType="System.String"/>
+        <Column Name="UserBranch" DataType="System.String"/>
+        <Column Name="UserZone" DataType="System.String"/>
+        <Column Name="SPASTDUE_ID" DataType="System.Int32"/>
+        <Column Name="SPASTDUE_STATUS" DataType="System.String"/>
+        <Column Name="Id_Com" DataType="System.Int64"/>
+        <Column Name="created_at" DataType="System.DateTime"/>
+        <Column Name="updated_at" DataType="System.DateTime"/>
+        <Column Name="DTSTOPV" DataType="System.DateTime"/>
+        <Column Name="FLSTOPV" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="PatchPSL_Contracts" DataType="System.Int32" Enabled="true" TableName="PatchPSL_Contracts">
+        <Column Name="id" DataType="System.Int64"/>
+        <Column Name="DataCus_id" DataType="System.Int64"/>
+        <Column Name="DataTag_id" DataType="System.Int64"/>
+        <Column Name="DataPact_id" DataType="System.Int64"/>
+        <Column Name="CONTNO" DataType="System.String"/>
+        <Column Name="CODLOAN" DataType="System.String"/>
+        <Column Name="CONTTYP" DataType="System.String"/>
+        <Column Name="TYPECON" DataType="System.String"/>
+        <Column Name="CONTSTAT" DataType="System.String"/>
+        <Column Name="SDATE" DataType="System.DateTime"/>
+        <Column Name="FDATE" DataType="System.DateTime"/>
+        <Column Name="LDATE" DataType="System.DateTime"/>
+        <Column Name="LPAYD" DataType="System.DateTime"/>
+        <Column Name="LPAYA" DataType="System.Decimal"/>
+        <Column Name="DLDAY" DataType="System.Int32"/>
+        <Column Name="CLOSAR" DataType="System.DateTime"/>
+        <Column Name="CLOSTAT" DataType="System.String"/>
+        <Column Name="TCSHPRC" DataType="System.Decimal"/>
+        <Column Name="INTFLATRATE" DataType="System.Decimal"/>
+        <Column Name="Interest_IRR" DataType="System.Decimal"/>
+        <Column Name="TOT_UPAY" DataType="System.Decimal"/>
+        <Column Name="N_UPAY" DataType="System.Decimal"/>
+        <Column Name="L_UPAY" DataType="System.Decimal"/>
+        <Column Name="TOTPRC" DataType="System.Decimal"/>
+        <Column Name="APPLICANT" DataType="System.String"/>
+        <Column Name="BALANC" DataType="System.Decimal"/>
+        <Column Name="NETPROFIT" DataType="System.Decimal"/>
+        <Column Name="INTKPAY" DataType="System.Decimal"/>
+        <Column Name="CAPITALBL" DataType="System.Decimal"/>
+        <Column Name="GRDCOD" DataType="System.String"/>
+        <Column Name="OLDGRDCOD" DataType="System.String"/>
+        <Column Name="LIMITIRR" DataType="System.Decimal"/>
+        <Column Name="PERIOD" DataType="System.Int32"/>
+        <Column Name="T_NOPAY" DataType="System.Decimal"/>
+        <Column Name="INTLATE" DataType="System.Decimal"/>
+        <Column Name="LOCAT" DataType="System.String"/>
+        <Column Name="FDATEINT" DataType="System.DateTime"/>
+        <Column Name="SMPAY" DataType="System.Decimal"/>
+        <Column Name="PAYTON" DataType="System.Decimal"/>
+        <Column Name="PAYINT" DataType="System.Decimal"/>
+        <Column Name="LASTDUEDATE" DataType="System.DateTime"/>
+        <Column Name="TONBALANCE" DataType="System.Decimal"/>
+        <Column Name="NOPAY" DataType="System.Int32"/>
+        <Column Name="EXP_DAY" DataType="System.Int32"/>
+        <Column Name="EXP_PRD" DataType="System.Int32"/>
+        <Column Name="EXP_AMT" DataType="System.Decimal"/>
+        <Column Name="EXP_FRM" DataType="System.Int32"/>
+        <Column Name="EXP_TO" DataType="System.Int32"/>
+        <Column Name="BILLCOLL" DataType="System.String"/>
+        <Column Name="SALECOD" DataType="System.String"/>
+        <Column Name="HLDNO" DataType="System.Decimal"/>
+        <Column Name="MTHDDIS" DataType="System.String"/>
+        <Column Name="USEADD" DataType="System.String"/>
+        <Column Name="RECONTNO" DataType="System.String"/>
+        <Column Name="CARRDT" DataType="System.DateTime"/>
+        <Column Name="SO" DataType="System.String"/>
+        <Column Name="MEMO" DataType="System.String"/>
+        <Column Name="YSTAT" DataType="System.String"/>
+        <Column Name="YDATE" DataType="System.DateTime"/>
+        <Column Name="UserInsert" DataType="System.String"/>
+        <Column Name="UserBranch" DataType="System.String"/>
+        <Column Name="UserZone" DataType="System.String"/>
+        <Column Name="SPASTDUE_ID" DataType="System.Int32"/>
+        <Column Name="SPASTDUE_STATUS" DataType="System.String"/>
+        <Column Name="Id_Com" DataType="System.Int64"/>
+        <Column Name="created_at" DataType="System.DateTime"/>
+        <Column Name="updated_at" DataType="System.DateTime"/>
+        <Column Name="DTSTOPV" DataType="System.DateTime"/>
+        <Column Name="FLSTOPV" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="Data_Customers" DataType="System.Int32" Enabled="true" TableName="Data_Customers" SelectCommand="SELECT TOP(100)  D.Prefix, D.Name_Cus, D.Firstname_Cus, D.Surname_Cus, D.IDCard_cus FROM &quot;Data_Customers&quot; D&#13;&#10;">
+        <Column Name="Prefix" DataType="System.String"/>
+        <Column Name="Name_Cus" DataType="System.String"/>
+        <Column Name="Firstname_Cus" DataType="System.String"/>
+        <Column Name="Surname_Cus" DataType="System.String"/>
+        <Column Name="IDCard_cus" DataType="System.String"/>
+      </TableDataSource>
+      <TableDataSource Name="Data_Assets" DataType="System.Int32" Enabled="true" TableName="Data_Assets">
+        <Column Name="id" DataType="System.Int64"/>
+        <Column Name="Flag_Asset" DataType="System.String"/>
+        <Column Name="Code_Asset" DataType="System.String"/>
+        <Column Name="Status_Asset" DataType="System.String"/>
+        <Column Name="TypeAsset_Code" DataType="System.String"/>
+        <Column Name="DataCus_Id" DataType="System.Int32"/>
+        <Column Name="Price_Asset" DataType="System.String"/>
+        <Column Name="Vehicle_OldLicense" DataType="System.String"/>
+        <Column Name="Vehicle_OldLicense_Text" DataType="System.String"/>
+        <Column Name="Vehicle_OldLicense_Number" DataType="System.String"/>
+        <Column Name="Vehicle_OldLicense_Province" DataType="System.String"/>
+        <Column Name="Vehicle_NewLicense" DataType="System.String"/>
+        <Column Name="Vehicle_NewLicense_Text" DataType="System.String"/>
+        <Column Name="Vehicle_NewLicense_Number" DataType="System.String"/>
+        <Column Name="Vehicle_NewLicense_Province" DataType="System.String"/>
+        <Column Name="Vehicle_Chassis" DataType="System.String"/>
+        <Column Name="Vehicle_Engine" DataType="System.String"/>
+        <Column Name="Vehicle_Color" DataType="System.String"/>
+        <Column Name="Vehicle_Miles" DataType="System.String"/>
+        <Column Name="Vehicle_CC" DataType="System.String"/>
+        <Column Name="Vehicle_Type" DataType="System.String"/>
+        <Column Name="Vehicle_Type_PLT" DataType="System.String"/>
+        <Column Name="Vehicle_Brand" DataType="System.Int32"/>
+        <Column Name="Vehicle_Group" DataType="System.Int32"/>
+        <Column Name="Vehicle_Model" DataType="System.Int32"/>
+        <Column Name="Vehicle_Year" DataType="System.String"/>
+        <Column Name="Vehicle_Gear" DataType="System.String"/>
+        <Column Name="Land_Type" DataType="System.String"/>
+        <Column Name="Land_Id" DataType="System.String"/>
+        <Column Name="Land_ParcelNumber" DataType="System.String"/>
+        <Column Name="Land_SheetNumber" DataType="System.String"/>
+        <Column Name="Land_TambonNumber" DataType="System.String"/>
+        <Column Name="Land_Book" DataType="System.String"/>
+        <Column Name="Land_BookPage" DataType="System.String"/>
+        <Column Name="Land_SizeRai" DataType="System.String"/>
+        <Column Name="Land_SizeNgan" DataType="System.String"/>
+        <Column Name="Land_SizeSquareWa" DataType="System.String"/>
+        <Column Name="Land_Zone" DataType="System.String"/>
+        <Column Name="Land_Province" DataType="System.String"/>
+        <Column Name="Land_District" DataType="System.String"/>
+        <Column Name="Land_Tambon" DataType="System.String"/>
+        <Column Name="Land_PostalCode" DataType="System.String"/>
+        <Column Name="Land_Coordinates" DataType="System.String"/>
+        <Column Name="Land_Detail" DataType="System.String"/>
+        <Column Name="Land_BuildingType" DataType="System.String"/>
+        <Column Name="Land_BuildingKind" DataType="System.String"/>
+        <Column Name="Land_BuildingStorey" DataType="System.String"/>
+        <Column Name="Land_BuildingSize" DataType="System.String"/>
+        <Column Name="UserZone" DataType="System.String"/>
+        <Column Name="UserBranch" DataType="System.String"/>
+        <Column Name="UserInsert" DataType="System.String"/>
+        <Column Name="dataTagCal_id" DataType="System.Int32"/>
+        <Column Name="created_at" DataType="System.DateTime"/>
+        <Column Name="updated_at" DataType="System.DateTime"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" RawPaperSize="9" Watermark.Font="Arial, 60pt">
+    <PageHeaderBand Name="PageHeader1" Width="718.2" Height="179.55">
+      <TextObject Name="วันที่พิมพ์" Left="576.45" Top="94.5" Width="141.75" Height="18.9" Text="วันที่ [TMP_CANCONTRACT.CANDATE]" Format="Date" Format.Format="d" RightToLeft="true" Font="TH SarabunPSK, 16pt, style=Bold"/>
+      <TextObject Name="Text5" Top="122.85" Width="94.5" Height="18.9" Text="เรื่อง" Font="TH SarabunPSK, 16pt"/>
+      <TextObject Name="Text6" Left="94.5" Top="122.85" Width="179.55" Height="18.9" Text="ขอยืนยันการบอกเลิกสัญญา" Font="TH SarabunPSK, 16pt"/>
+      <TextObject Name="Text9" Left="-9.45" Top="56.7" Width="245.7" Height="18.9" Text="[TMP_CANCONTRACT.CONTNO]" Font="TH SarabunPSK, 16pt, style=Bold"/>
+      <LineObject Name="Line1" Top="47.25" Width="718.2" Border.Width="3"/>
+      <TextObject Name="Text2" Left="151.2" Top="18.9" Width="330.75" Height="28.35" Text="[TB_Company.Company_Addr]" Font="TH SarabunPSK, 16pt, style=Bold"/>
+      <TextObject Name="Text3" Left="434.7" Top="18.9" Width="160.65" Height="18.9" Text="โทร [TB_Company.Company_fax]" Font="TH SarabunPSK, 16pt, style=Bold"/>
+      <TextObject Name="Text1" Left="217.35" Top="-9.45" Width="302.4" Height="37.8" Text="[TB_Company.Company_Name]" Font="TH SarabunPSK, 20pt, style=Bold"/>
+      <TextObject Name="Text7" Top="151.2" Width="94.5" Height="18.9" Text="เรียน" Font="TH SarabunPSK, 16pt"/>
+      <TextObject Name="Text8" Left="94.5" Top="151.2" Width="47.25" Height="28.35" Text="1.คุณ" Font="TH SarabunPSK, 16pt"/>
+      <TextObject Name="Text10" Left="368.55" Top="151.2" Width="94.5" Height="28.35" Text="ผู้เช่าซื้อ" Font="TH SarabunPSK, 16pt"/>
+      <TextObject Name="Text17" Left="132.3" Top="151.2" Width="94.5" Height="18.9" Text="[Data_Customers.Firstname_Cus]" Font="TH SarabunPSK, 16pt"/>
+      <TextObject Name="Text18" Left="189" Top="151.2" Width="94.5" Height="18.9" Text="[Data_Customers.Surname_Cus]" Font="TH SarabunPSK, 16pt"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="183.55" Width="718.2" Height="444.15" DataSource="Data_Customers">
+      <TextObject Name="Text15" Left="56.7" Top="56.7" Width="94.5" Height="18.9" Text="ตามที่ คุณ" Font="TH SarabunPSK, 16pt"/>
+      <TextObject Name="Text19" Left="122.85" Top="56.7" Width="94.5" Height="18.9" Text="[Data_Customers.Firstname_Cus]" Font="TH SarabunPSK, 16pt"/>
+      <TextObject Name="Text20" Left="179.55" Top="56.7" Width="94.5" Height="18.9" Text="[Data_Customers.Surname_Cus]" Font="TH SarabunPSK, 16pt"/>
+      <TextObject Name="Text21" Left="274.05" Top="56.7" Width="217.35" Height="18.9" Text="ได้ตกลงทำสัญญาเช่าซื้อรถยนต์ยี่ห้อ" Font="TH SarabunPSK, 16pt"/>
+      <TextObject Name="Text13" Left="368.55" Top="28.35" Width="94.5" Height="28.35" Text="ผู้ค้ำประกัน" Font="TH SarabunPSK, 16pt"/>
+      <TextObject Name="Text14" Left="94.5" Top="28.35" Width="94.5" Height="18.9" Text="3." Font="TH SarabunPSK, 16pt"/>
+      <TextObject Name="Text11" Left="94.5" Width="94.5" Height="18.9" Text="2." Font="TH SarabunPSK, 16pt"/>
+      <TextObject Name="Text12" Left="368.55" Width="94.5" Height="28.35" Text="ผู้ค้ำประกัน" Font="TH SarabunPSK, 16pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="631.7" Width="718.2" Height="37.8">
+      <TextObject Name="Text24" Left="557.55" Top="9.45" Width="141.75" Height="18.9" Text="[Page#] / [TotalPages#]" HorzAlign="Right" Font="Arial, 10pt"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

@@ -1,0 +1,85 @@
+<?php
+
+namespace App\Models\TB_PatchContracts\TB_InsideContracts;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class PatchPSL_HContracts extends Model
+{
+    use HasFactory;
+
+    protected $table = 'PatchPSL_HContracts';
+    protected $fillable = [
+        ,'PatchCon_id'
+        ,'DataCus_id'
+        ,'DataTag_id'
+        ,'DataPact_id'
+        ,'CONTNO'
+        ,'CODLOAN'
+        ,'CONTTYP'
+        ,'TYPECON'
+        ,'CONTSTAT'
+        ,'SDATE'
+        ,'FDATE'
+        ,'LDATE'
+        ,'LPAYD'
+        ,'LPAYA'
+        ,'DLDAY'
+        ,'CLOSAR'
+        ,'CLOSTAT'
+        ,'TCSHPRC'
+        ,'INTFLATRATE'
+        ,'Interest_IRR'
+        ,'TOT_UPAY'
+        ,'N_UPAY'
+        ,'L_UPAY'
+        ,'TOTPRC'
+        ,'APPLICANT'
+        ,'BALANC'
+        ,'NETPROFIT'
+        ,'INTKPAY'
+        ,'CAPITALBL'
+        ,'GRDCOD'
+        ,'OLDGRDCOD'
+        ,'LIMITIRR'
+        ,'PERIOD'
+        ,'T_NOPAY'
+        ,'INTLATE'
+        ,'LOCAT'
+        ,'FDATEINT'
+        ,'SMPAY'
+        ,'PAYTON'
+        ,'PAYINT'
+        ,'LASTDUEDATE'
+        ,'TONBALANCE'
+        ,'NOPAY'
+        ,'EXP_DAY'
+        ,'EXP_PRD'
+        ,'EXP_AMT'
+        ,'EXP_FRM'
+        ,'EXP_TO'
+        ,'BILLCOLL'
+        ,'SALECOD'
+        ,'HLDNO'
+        ,'MTHDDIS'
+        ,'USEADD'
+        ,'RECONTNO'
+        ,'CARRDT'
+        ,'SO'
+        ,'MEMO'
+        ,'YSTAT'
+        ,'YDATE'
+        ,'UserInsert'
+        ,'UserBranch'
+        ,'UserZone'
+        ,'SPASTDUE_ID'
+        ,'SPASTDUE_STATUS'
+        ,'Id_Com'
+        ,'DTSTOPV'
+        ,'FLSTOPV'
+        ,'DINV'
+        ,'IDINV'
+
+    ];
+}

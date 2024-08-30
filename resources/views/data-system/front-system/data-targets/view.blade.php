@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-lg-12">
+    <span class="showScroll2 float-end">
+        <!-- <a class="Modal-xl hover-up" data-bs-toggle="modal" data-bs-target="#Modal-xl" data-link="{{ route('dataStatic.create') }}?page={{'frontend'}}&modal={{'targets'}}&mode={{'create'}}" style="cursor:pointer;"> -->
+        <a class="Modal-xxl hover-up" data-bs-toggle="modal" data-bs-target="#Modal-xxl" data-link="{{ route('dataStatic.create') }}?page={{'frontend'}}&modal={{'targets'}}&mode={{'create-past'}}&month={{date('m', strtotime('-1 month'))}}&year={{date('Y')}}" style="cursor:pointer;">
+          <div class="bg-danger" style="left:-95px; top:10px; z-index:1; position:relative; width: 100%; opacity:0.9;">
+            <div class="bg-danger bg-gradient" style="z-index:-1; left: -6px; position:absolute; width: 50px; height: 45px; border-radius:30px 0px 0px 30px;"></div>
+            <div class="bg-light border border-light border-5" style="z-index:3; position:absolute; top: 5px; left: 2px; border-radius:50px;">
+              <div style="width:25px;" data-bs-toggle="tooltip" title="เรียกเป้าเดือนที่แล้ว">
+                <img src="{{ asset('assets/images/plus.png') }}" alt="เพิ่ม" width="100%" height="100%">
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- <a class="Modal-xl hover-up" data-bs-toggle="modal" data-bs-target="#Modal-xl" data-link="{{ route('dataStatic.create') }}?page={{'frontend'}}&modal={{'targets'}}&mode={{'create-past'}}&count={{19}}" style="cursor:pointer;"> -->
+        <a class="Modal-xxl hover-up" data-bs-toggle="modal" data-bs-target="#Modal-xxl" data-link="{{ route('dataStatic.create') }}?page={{'frontend'}}&modal={{'targets'}}&mode={{'create'}}" style="cursor:pointer;">
+          <div class="bg-dark" style="left:-45px; top:10px; z-index:1; position:relative; width: 100%; opacity:0.9;">
+              <div class="bg-dark bg-gradient" style="z-index:-1; left: -6px; position:absolute; width: 50px; height: 45px; border-radius:0px 30px 30px 0px;"></div>
+              <div class="bg-light border border-light border-5" style="z-index:3; position:absolute; top: 5px; left: 2px; border-radius:50px;">
+                  <div style="width:25px;" data-bs-toggle="tooltip" title="เพิ่มเป้าสาขาใหม่">
+                  <img src="{{ asset('assets/images/plus.png') }}" alt="เพิ่ม" width="100%" height="100%">
+                  </div>
+              </div>
+          </div>
+        </a>
+    </span>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div id="dataTarget">
+            @include('data-system.front-system.data-targets.data')
+        </div>
+    </div> <!-- end col -->
+</div>

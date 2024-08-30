@@ -1,0 +1,76 @@
+
+/* หัวข้อ option */
+.select2-results__group {
+    color: var(--bs-dark) !important; /* --bs-dark */
+    font-weight: 600 !important;
+}
+
+.select2-container--bootstrap-5 .select2-dropdown {
+    color: var(--bs-body-color); /* --bs-dark */
+}
+
+.select2-container--bootstrap-5 .select2-dropdown {
+    background-color: var(--bs-custom-white);
+}
+
+/* กำลังชี้ที่ option */
+.select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option.select2-results__option--highlighted {
+    background-color: #556ee6 !important;
+    color: white;
+}
+
+.select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option.select2-results__option--selected, .select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option[aria-selected=true]:not(.select2-results__option--highlighted) {
+    background-color: var(--bs-light);
+    color: var(--bs-body-color);
+}
+
+.select2-search__field {
+    background-color: var(--bs-custom-white) !important;
+    color: var(--bs-body-color) !important; /* --bs-dark */
+    padding: 0.47rem 0.75rem !important;
+    font-size: .8125rem !important;
+}
+
+.select2-selection.select2-selection--single {
+    background-color: var(--bs-custom-white) !important;
+    color: var(--bs-body-color) !important; /* --bs-dark */
+}
+
+[data-layout-mode=dark] .select2-selection.select2-selection--single {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ced4da' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+}
+
+.select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered {
+    color: var(--bs-body-color); /* --bs-dark */
+}
+
+[data-layout-mode=dark] .select2-container--bootstrap-5 .select2-selection--multiple .select2-selection__clear,
+[data-layout-mode=dark] .select2-container--bootstrap-5 .select2-selection--single .select2-selection__clear {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ced4da'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") 50%/.75rem auto no-repeat;
+}
+
+/* ผลการค้นหา */
+.select2-container--bootstrap-5 .select2-dropdown .select2-results__options .select2-results__option.select2-results__message {
+    color: var(--bs-body-color);
+}
+
+/* placeholder */
+.select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered .select2-selection__placeholder {
+    color: var(--bs-body-color);
+}
+
+/* ----------------------------------------------------- */
+
+/* ปรับขนาด md */
+.select2-container--bootstrap-5 .select2-selection--single {
+    padding: 0.47rem 0.75rem;
+    font-size: .8125rem;
+}
+
+.select2-results__option {
+    font-size: .8125rem !important;
+}
+
+.select2-results__group {
+    font-size: .8125rem !important;
+}
